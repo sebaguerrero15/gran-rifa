@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  background-color: #202020;
+  min-height: 100vh;
+  min-width: 100%;
+  color: white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+  text-align: center;
+  
+}
+
+.Titulo{
+  font-size: 50px;
+  text-transform: uppercase;
+  margin: 30px 0px
+}
+
+.botones{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px;
+}
+
+.botonGanador {
+  padding: 8px;
+  border-radius: 12px;
+  font-size: 15px;
+  background-color: limegreen;
+  color: white;
+  font-weight: 600;
+}
+
+.botonNumero{
+  padding: 8px;
+  border-radius: 12px;
+  font-size: 15px;
+  background-color: darkred;
+  color: white;
+  font-weight: 600;
+}
+
+.tituloTabla{
+  text-align: center;
+  margin: 30px;
+  margin-top: 10px;
+}
+
+.contenidoTabla{
+  margin: 15px;
+}
+
+.p-numero-ganador{
+font-size: 50px;
+}
+
+.tabla{
+  display: grid;
+  justify-content: center;
+}
