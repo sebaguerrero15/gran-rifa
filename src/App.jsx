@@ -5,7 +5,6 @@ import './index.css';
 
 function Rifa() {
   const [numeroGanador, setNumeroGanador] = useState(null);
-  const [numerosSeleccionadosLista, setNumerosSeleccionadosLista] = useState([]);
   const [numerosSeleccionados, setNumerosSeleccionados] = useState([]);
   const [numeroAleatorio, setNumeroAleatorio] = useState(null);
   const [mostrarConfeti, setMostrarConfeti] = useState(false);
@@ -25,7 +24,7 @@ function Rifa() {
   const seleccionarGanador = () => {
     let nuevoNumeroGanador;
     do {
-      nuevoNumeroGanador = generarNumeroAleatorio(1, 250);
+      nuevoNumeroGanador = generarNumeroAleatorio(1, 235);
     } while (numerosSeleccionados.includes(nuevoNumeroGanador));
 
     setNumerosSeleccionados([...numerosSeleccionados, nuevoNumeroGanador]);
